@@ -1,0 +1,19 @@
+C:\> node server.js
+Node.js web server at port 5000 is running..
+/*url is used to check the url of the current request and based on that it sends the response. 
+To send a response, first it sets the response header using writeHead() method and then writes a string as a response body using write() method.
+Finally, Node.js web server sends the response using end() method.*/
+
+
+
+
+
+//To test it, you can use the command-line program curl, which most Mac and Linux machines have pre-installed
+curl -i http://localhost:5000
+
+// response.
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Date: Tue, 8 Sep 2015 03:05:08 GMT
+Connection: keep-alive
+This is home page.
